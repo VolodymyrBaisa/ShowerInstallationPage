@@ -14,10 +14,11 @@ export const Portfolio = () => (
   <section id="portfolio" className="section portfolio">
     <div className="container">
       <div className="section-heading">
-        <span className="eyebrow">Signature Projects</span>
-        <h2>Showers designed for wellness suites, penthouses, and boutique hospitality</h2>
+        <span className="eyebrow">Recent Installations</span>
+        <h2>Shower environments curated for residences and hospitality</h2>
         <p>
-          Explore a selection of environments engineered for durability, easy maintenance, and unforgettable guest experiences.
+          Explore a snapshot of Unic surrounds—from wellness suites to penthouse retreats—each engineered for durability and
+          spa-level comfort.
         </p>
       </div>
       <div className="portfolio-grid">
@@ -37,7 +38,7 @@ export const Portfolio = () => (
             <div className="portfolio-content">
               <div className="portfolio-meta">
                 <span>{project.location}</span>
-                <span>Completed 2023</span>
+                <span>Completed {project.year}</span>
               </div>
               <h3>{project.name}</h3>
               <p>{project.description}</p>

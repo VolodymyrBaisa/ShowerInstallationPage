@@ -15,9 +15,10 @@ export const Services = () => (
     <div className="container">
       <div className="section-heading">
         <span className="eyebrow">Services</span>
-        <h2>Complete shower installation services for luxury residences & hospitality</h2>
+        <h2>All-inclusive shower surround solutions for discerning spaces</h2>
         <p>
-          From conceptual design to handover, our experts translate complex specifications into cohesive, buildable solutions.
+          From first consultation through finishing touches, our licensed team delivers spa-worthy showers with the craftsmanship
+          and courtesy UnicTiles clients expect.
         </p>
       </div>
       <div className="services-grid">

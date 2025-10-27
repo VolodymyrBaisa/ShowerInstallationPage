@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { metrics, partners } from '../data/content.js';
+import { aboutCopy, metrics, partners } from '../data/content.js';
 
 const variants = {
   hidden: { opacity: 0, y: 32 },
@@ -14,13 +14,11 @@ export const About = () => (
   <section id="about" className="section about">
     <div className="container about-container">
       <div className="about-content">
-        <span className="eyebrow">About CrystalFlow</span>
-        <h2>Specialists in architectural showers and hydrotherapy environments</h2>
-        <p>
-          We orchestrate the complete shower installation journey—from technical design and specification management to on-site
-          execution and aftercare. Our teams operate with white-glove protocols, ensuring every surface, control, and joint
-          performs impeccably for years to come.
-        </p>
+        <span className="eyebrow">About Unic Shower Surrounds</span>
+        <h2>Concierge shower installation guided by the UnicTiles legacy</h2>
+        {aboutCopy.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
         <div className="about-grid">
           {metrics.map((metric, index) => (
             <motion.article
@@ -57,8 +55,8 @@ export const About = () => (
         <div className="aside-note">
           <h4>Concierge project management</h4>
           <p>
-            Your dedicated project lead coordinates trades, documentation, and daily reporting so you always have clarity on the
-            build timeline.
+            A dedicated project lead coordinates trades, documentation, and updates so every shower surround meets schedule and
+            specification.
           </p>
         </div>
       </motion.aside>

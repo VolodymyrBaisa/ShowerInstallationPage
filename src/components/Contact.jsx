@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { contactInfo } from '../data/content.js';
 
 const initialState = {
   name: '',
@@ -20,7 +21,7 @@ export const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setStatus('Thank you. Our concierge team will reach out within one business day.');
+    setStatus('Thank you. An Unic concierge will reach out within one business day.');
     setFormData(initialState);
   };
 
@@ -37,24 +38,27 @@ export const Contact = () => {
           <span className="eyebrow">Contact</span>
           <h2>Let’s design the shower experience your space deserves</h2>
           <p>
-            Share your project goals and our concierge will coordinate a consultation, material review, and on-site survey to
+            Share your goals and our concierge team will schedule a consultation, review materials, and plan an on-site survey to
             begin your transformation.
           </p>
           <div className="contact-details">
             <div>
               <strong>Studio</strong>
-              <span>315 Waterline Ave, Suite 600</span>
-              <span>Chicago, IL 60601</span>
+              <span>{contactInfo.studio.addressLine1}</span>
+              <span>{contactInfo.studio.addressLine2}</span>
             </div>
             <div>
               <strong>Connect</strong>
-              <a href="tel:+13125551234">(312) 555-1234</a>
-              <a href="mailto:concierge@crystalflow.com">concierge@crystalflow.com</a>
+              {contactInfo.phones.map((phone) => (
+                <a key={phone} href={`tel:+1${phone.replace(/[^\d]/g, '')}`}>{phone}</a>
+              ))}
+              <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
             </div>
             <div>
               <strong>Hours</strong>
-              <span>Monday – Friday</span>
-              <span>8:00 AM – 6:00 PM CST</span>
+              {contactInfo.hours.map((line) => (
+                <span key={line}>{line}</span>
+              ))}
             </div>
           </div>
         </motion.div>
@@ -125,9 +129,7 @@ export const Contact = () => {
               required
             />
           </label>
-          <button type="submit" className="btn btn-primary">
-            Submit Inquiry
-          </button>
+          <button type="submit" className="btn btn-primary">Submit Inquiry</button>
           {status && <p className="form-status">{status}</p>}
         </motion.form>
       </div>

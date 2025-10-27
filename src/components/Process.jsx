@@ -15,10 +15,10 @@ export const Process = () => (
     <div className="container">
       <div className="section-heading">
         <span className="eyebrow">Process</span>
-        <h2>A concierge methodology designed around clarity and craftsmanship</h2>
+        <h2>A documented methodology that keeps your project effortless</h2>
         <p>
-          Every CrystalFlow project follows a documented framework that keeps stakeholders aligned while preserving design intent
-          and protecting timelines.
+          Every Unic shower surround follows a proven framework that keeps designers, homeowners, and property managers aligned
+          without sacrificing schedule or finish quality.
         </p>
       </div>
       <div className="process-grid">

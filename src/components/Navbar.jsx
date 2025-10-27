@@ -39,12 +39,12 @@ export const Navbar = () => {
           className="brand"
           type="button"
           onClick={() => scroll.scrollToTop({ duration: 600 })}
-          aria-label="CrystalFlow Shower Installations"
+          aria-label="Unic Shower Surrounds"
         >
-          <img src={logo} alt="CrystalFlow logo" />
+          <img src={logo} alt="Unic Shower Surrounds logo" />
           <div className="brand-text">
-            <span className="brand-name">CrystalFlow</span>
-            <span className="brand-tagline">Shower Installations</span>
+            <span className="brand-name">Unic</span>
+            <span className="brand-tagline">Shower Surrounds</span>
           </div>
         </button>
 
@@ -78,7 +78,7 @@ export const Navbar = () => {
             className="btn btn-primary nav-cta"
             onClick={closeMenu}
           >
-            Book Consultation
+            Request a Quote
           </Link>
         </nav>
 

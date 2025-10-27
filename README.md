@@ -1,6 +1,6 @@
-# CrystalFlow Shower Installation Landing Page
+# Unic Shower Surrounds Landing Page
 
-A premium single-page React experience inspired by modern tile and surface design studios, tailored for CrystalFlow shower installation services.
+A premium single-page React experience inspired by UnicTiles.com and modern tile studios, tailored for marketing professional shower surround installation services.
 
 ## Tech Stack
 - [React 18](https://react.dev/) + [Vite](https://vitejs.dev/) for a fast, component-based SPA

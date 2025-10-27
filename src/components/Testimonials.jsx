@@ -6,10 +6,10 @@ export const Testimonials = () => (
     <div className="container">
       <div className="section-heading center">
         <span className="eyebrow">Testimonials</span>
-        <h2>Trusted by design leaders and discerning property owners</h2>
+        <h2>Clients love the Unic approach to shower renovations</h2>
         <p>
-          Our collaborative approach and obsession with detail earn repeat engagements with top-tier architects and hospitality
-          brands across the country.
+          Hear how homeowners, property managers, and hospitality teams describe their experience partnering with our certified
+          shower installation specialists.
         </p>
       </div>
       <div className="testimonials-grid">

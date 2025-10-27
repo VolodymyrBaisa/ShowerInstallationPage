@@ -12,8 +12,8 @@ export const Footer = () => (
   <footer className="footer">
     <div className="container footer-container">
       <div className="footer-brand">
-        <h3>CrystalFlow Shower Installations</h3>
-        <p>Transforming bathrooms into immersive spa sanctuaries with turnkey design-build services.</p>
+        <h3>Unic Shower Surrounds</h3>
+        <p>Inspired by UnicTiles, we install spa-worthy showers with concierge coordination and meticulous craftsmanship.</p>
       </div>
       <nav className="footer-nav" aria-label="Footer">
         <h4>Explore</h4>
@@ -48,7 +48,7 @@ export const Footer = () => (
     </div>
     <div className="footer-bottom">
       <div className="container">
-        <span>© {new Date().getFullYear()} CrystalFlow Studio. All rights reserved.</span>
+        <span>© {new Date().getFullYear()} Unic Shower Surrounds. All rights reserved.</span>
         <div className="footer-links">
           <a href="#">Privacy</a>
           <a href="#">Terms</a>
