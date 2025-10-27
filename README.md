@@ -19,6 +19,4 @@ Visit `http://localhost:5173` to explore the page locally.
 ```bash
 npm run build
 ```
-The optimized assets will be generated in the `dist/` directory. The post-build step strips CORS-related attributes so you can
-open `dist/index.html` directly from disk (e.g., double-clicking the file) without seeing a blank page. For a local server
-preview, run `npm run preview` instead.
+The optimized assets will be generated in the `dist/` directory.
